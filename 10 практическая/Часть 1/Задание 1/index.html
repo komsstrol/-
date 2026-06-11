@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Программирование на языке PHP</title>
+</head>	
+<body>
+
+	<h1>Отправка данных на сервер</h1>
+	<h2>Отправка форм</h2>
+
+	<form action="server.php" method="post">
+		Фамилия: <input type="text" name="surname"><p>
+		Имя: <input type="text" name="name"><p>
+		Отчество: <input type="text" name="patronymic"><p>
+		Должность: <input type="text" name="post"><p>
+		Уровень образования: 
+		<select name="education">
+			<option>Высшее (бакалавриат)</option>
+			<option>Высшее (специалитет, магистратура)</option>
+			<option>Подготовка кадров высшей квалификации</option>
+			<option>Среднее профессиональное</option>
+		</select><p>
+		Категория: 
+		Высшая <input type="radio" name="category" value="Высшая">
+		Первая <input type="radio" name="category" value="Первая">
+		Соответствие занимаемой должности <input type="radio" name="category" value="Соответствие занимаемой должности"><p>
+		Общий стаж: <input type="number" step="0.1" name="experience"><p>
+		Стаж в техникуме: <input type="number" step="0.1" name="experience_local"><p>	
+		
+		<input type="submit">
+	</form>
+	
+
+</body>
+</html>
